@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
@@ -21,12 +23,14 @@
 
     <main>
         <section class="blog-container">
+            <div data-aos="fade-up">
         <article class="blog-post">
             <img src="image 1.jpg" alt="post image">
             <h2> <a href="how-to-host.html">How To Host Websites For Free</a></h2>
             <p> Teaching beginners how to deploy websites without paying for hosting.</p>
             <a href="how-to-host.html" class="read-more">Read More</a>
         </article>
+    </div>
     </section>
     </main>
 
@@ -34,5 +38,8 @@
         <p> &copy; 2025 Beyond Temmie. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

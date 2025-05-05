@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Beyond Temmie</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
@@ -20,6 +23,7 @@
     </header>
 
     <main>
+      <div data-aos="fade-up">
         <article class="blog-post">
           <h2>How To Host Websites For Free</h2><br>
       <img src="image 1.jpg" alt="post image"><br><br>
@@ -268,10 +272,14 @@
       If you found this guide helpful, go ahead and try hosting your projects!  
     </p>
         </article>
+      </div>
     </main>
     <footer>
         &copy; 2025 Beyond Temmie. All rights reserved.
     </footer>
     <script src="script.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

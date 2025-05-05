@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Creativity</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
@@ -20,17 +23,32 @@
     </header>
 <main>
     <section class="blog-container">
+
+        <div data-aos="fade-up">
+    <article class="blog-post">
+        <img src="light.jpg" alt="post image">
+        <h2><a href="master-lighting.html">Mastering Mobile Lighting</a></h2>
+        <p>Lighting is the part of every great photo and......</p>
+            <a href="master-lighting.html" class="read-more">Read More</a>
+    </article>
+        </div>
+
+        <div data-aos="fade-up">
     <article class="blog-post">
         <img src="image 2.jpg" alt="post image">
-        <h2><a href="phone-photography.html">How To Take Professional Photos/Videos With A Phone</a></h2>
-        <p>Helping beginners improve their mobile photography and cinematography skills. </p>
+        <h2><a href="phone-photography.html">How To Take Professional Photos and Videos With A Phone</a></h2>
+        <p> Do you think you need an expensive camera to take stunning photos and cinematic videos? If yes, you're......</p>
             <a href="phone-photography.html" class="read-more">Read More</a>
     </article>
-    </section>
+        </div>
 </main>
+    </section>
     <footer>
         <p> &copy; 2025 Beyond Temmie. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

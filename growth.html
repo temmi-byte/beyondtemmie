@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Growth</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
@@ -20,6 +23,7 @@
     </header>
 
     <main>
+        <div data-aos="fade-up">
         <section class="blog-container">
         <article class="blog-post">
             <img src="image 3.jpg" alt="post image">
@@ -28,11 +32,15 @@
                 <a href="stay-motivated.html" class="read-more">Read More</a>
         </article>
     </section>
+        </div>
     </main>
 
     <footer>
         <p> &copy; 2025 Beyond Temmie. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

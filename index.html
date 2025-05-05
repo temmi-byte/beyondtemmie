@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Beyond Temmie</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <header>
         <h1>Beyond Temmie</h1>
         <nav>
-            <a href="creativity.html">Creativity</a>
-            <a href="tech.html">Tech</a>
-            <a href="growth.html">Growth</a>
-            <a href="about.html">About</a>
+            <a href="./creativity.html">Creativity</a>
+            <a href="./tech.html">Tech</a>
+            <a href="./growth.html">Growth</a>
+            <a href="./about.html">About</a>
             <button id="dark-mode-toggle" class="btn">
                 <img src="dark.png" alt="dark mode" class="dark-image">
             </button>
@@ -22,26 +25,32 @@
 
     <main>
         <section class="blog-container">
+            <div data-aos="fade-up">
+            <article class="blog-post">
+                <img src="light.jpg" alt="post image">
+                <h2> <a href="master-lighting.html">Mastering Mobile Lighting</a></h2>
+                <p>  Lighting is the part of every great photo and......</p>
+                <a href="master-lighting.html" class="read-more">Read More</a>
+            </article>
+            </div>
+
+            <div data-aos="fade-up">
+            <article class="blog-post">
+                <img src="image 3.jpg" alt="post image">
+                                <h2><a href="stay-motivated.html">How I Stay Motivated As A Student, Creative And A Developer</a></h2>
+                <p>My struggles and strategies to stay consistent.</p>
+                    <a href="stay-motivated.html" class="read-more">Read More</a>
+            </article>
+            </div>
+
+            <div data-aos="fade-up">
             <article class="blog-post">
                 <img src="image 1.jpg" alt="post image">
                 <h2> <a href="how-to-host.html">How To Host Websites For Free</a></h2>
-                <p>  Want to launch your websites but don't have money for paid hosting? You're not alone! As a beginner developer......</p>
+                <p> Teaching beginners how to deploy websites without paying for hosting.</p>
                 <a href="how-to-host.html" class="read-more">Read More</a>
             </article>
-
-            <article class="blog-post">
-                <img src="image 2.jpg" alt="post image">
-                <h2><a href="phone-photography.html">How To Take Professional Photos and Videos With A Phone</a></h2>
-                <p> Do you think you need an expensive camera to take stunning photos and cinematic videos? If yes, you're at the right place!..... </p>
-                    <a href="phone-photography.html" class="read-more">Read More</a>
-            </article>
-
-            <article class="blog-post">
-                <img src="image 3.jpg" alt="post image">
-                <h2><a href="stay-motivated.html">How I Stay Motivated As A Student, Creative And A Developer</a></h2>
-                <p>Balancing school life with creativity and tech isn't easy. Especially when .....</p>
-                    <a href="stay-motivated.html" class="read-more">Read More</a>
-            </article>
+            </div>
         </section>
     </main>
 
@@ -49,5 +58,8 @@
         <p> &copy; 2025 Beyond Temmie. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
