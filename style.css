@@ -214,3 +214,9 @@ p {
     font-style: normal; 
     letter-spacing: 4px;
 }
+
+.social-icons {
+      gap: 2rem;
+      font-size: 2rem;
+    }
+.social-icons a i { color: #1877F2; }
