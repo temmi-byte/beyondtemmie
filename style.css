@@ -68,7 +68,7 @@ nav a {
 
 /* Hero Section */
 .hero {
-    background-image: url(hero.png);
+    background-image: url(logo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -103,6 +103,12 @@ nav a {
     }
 }
 
+.hero-content {
+     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px 12px;
+}
+
 .hero-content h1 {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -119,6 +125,7 @@ nav a {
     background-color: rgb(0, 87, 179);
     color: white;
     padding: 12px 24px;
+    margin-bottom: 5px;
     text-decoration: none;
     border-radius: 5px;
     transition: 0.3s;
