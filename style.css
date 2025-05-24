@@ -11,8 +11,11 @@ body {
 
 header {
     background-color: rgb(36, 114, 202);
+    background-size: contain;
     color: antiquewhite;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
     transform: translateY(20px);
     animation: fadeInUp 0.8s ease-in-out forwards;
@@ -23,6 +26,11 @@ header {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.beyond-logo {
+    width: 45px;
+    height: 45px;
 }
 
 header .cancel {
@@ -56,6 +64,108 @@ nav a {
         transform: translateY(0);
     }
 }
+
+
+/* Hero Section */
+.hero {
+    background-image: url(hero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 98%;
+    height: 100vh;
+    filter: drop-shadow(-12px 0 2px rgba(0,0,0,0.5));
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 70vh;
+        width: 92.6%;
+        background-position: center top;
+    }
+
+    .header {
+        background-size: cover;
+    }
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: antiquewhite;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: antiquewhite;
+}
+
+.btn {
+    background-color: rgb(0, 87, 179);
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition: transform 0.3s ease-in-out;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scroll-down span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #b1c5da;
+    border-right: 2px solid #b1c5da;
+    margin: -10px;
+    animation: scroll-down 2s infinite;
+}
+
+.scroll-down span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.scroll-down span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
 
 .blog-container {
     display: flex;
@@ -97,6 +207,39 @@ nav a {
     border-radius: 5px;
     transform: translateY(20px);
     animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.find {
+    text-align: center;
+    color: #007bff;
+}
+
+.service-list {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+
+.service-item {
+    flex: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 1rem;
+    background: #e4dfdf;
+    color: #000;
+    text-align: center;
+    border:1px;
+    border-radius: 10px;
 }
 
 @keyframes fadeInUp {
@@ -201,6 +344,16 @@ color: antiquewhite;
     background-color: rgb(36, 114, 202);
 }
 
+.dark-mode .service-list {
+    background: #111;
+    color: #e4dfdf;
+}
+
+.dark-mode .service-item {
+    background-color: #222;
+    color: #e4dfdf;
+}
+
 .mat {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -221,3 +374,43 @@ p {
       margin-left: 20px;
 }
 .social-icons a i { color: #1877F2; }
+
+.about {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px;
+    border-radius: 10px;
+}
+
+.about img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    align-items: center;
+}
+
+.about h1 {
+    color: #007bff;
+}
+
+.dark-mode .about {
+    background-color: #1b1b1b;
+    color: antiquewhite;
+}
+
+.dark-mode .latest {
+    background-color: #333;
+}
+
+
+.latest {
+    text-align: center; 
+    color: #0057b3; 
+    padding: 12px 14px;
+    background-color: #e4dfdf;
+}
